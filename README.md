@@ -32,3 +32,8 @@ https://cdnjs.com/libraries/font-awesome
 
 1. Copy link tag in public/index.html
 2. Now icon classes can be used in our components: `<i className=""> </i>`
+
+#### 4. Install React Router DOM:
+
+1. `npm install react-router-dom@latest`
+2. `npm install react-router-bootstrap@latest`
