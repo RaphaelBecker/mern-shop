@@ -2,11 +2,11 @@
 
 ## frontend:
 
-#### Created React App:
+#### 1. Created React App:
 
 `npx create-react-app frontend `
 
-#### Used preconfigured React Bootstrap theme from:
+##### A) Used preconfigured React Bootstrap theme from:
 
 https://bootswatch.com/
 
@@ -16,19 +16,19 @@ https://bootswatch.com/
 4. import min.css file in index.js file unter React DOM imports: `import "./bootstrap.min.css";`
 5. Style of Website should be changed now!
 
-#### React Bootstrap:
+#### 2. React Bootstrap Components:
 
 https://react-bootstrap.github.io/getting-started/introduction
 Install React Bootstrap in folder frontend:
 `npm install react-bootstrap`
 
-#### Navbar:
+##### A) Navbar:
 
 https://react-bootstrap.github.io/components/navbar/
 
-#### Cart & Sign In Logo:
+#### 3. Logos: Cart & Sign In:
 
 https://cdnjs.com/libraries/font-awesome
 
-1. copy link tag in public/index.html
+1. Copy link tag in public/index.html
 2. Now icon classes can be used in our components: `<i className=""> </i>`
