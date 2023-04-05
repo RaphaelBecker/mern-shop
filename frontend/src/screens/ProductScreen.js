@@ -1,12 +1,22 @@
-import React from "react";
-import { Link, useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Row, Col, Button, Card, ListGroup, Image } from "react-bootstrap";
 import Rating from "../components/Rating";
-import products from "../products";
+import axios from "axios";
 
 const ProductScreen = () => {
   const { id } = useParams();
-  const product = products.find((product) => product._id === id);
+  const [product, setProduct] = useState({});
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(`http://localhost:5000/products/${id}`);
+      setProduct(data);
+      console.log(id);
+    };
+    fetchProduct();
+  }, [id]);
 
   return (
     <>
@@ -17,7 +27,7 @@ const ProductScreen = () => {
         <Col md={7}>
           <Image src={product.image} alt={product.name} fluid />
         </Col>
-        <Col md={5}>
+        <Col md={4}>
           <ListGroup variant="flush">
             <ListGroup.Item>
               <h3>{product.name}</h3>

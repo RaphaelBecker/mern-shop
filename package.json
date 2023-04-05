@@ -1,0 +1,30 @@
+{
+  "name": "mern-shop",
+  "version": "1.0.0",
+  "description": "MERN shop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaelBecker/mern-shop.git"
+  },
+  "author": "Raphael Becker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RaphaelBecker/mern-shop/issues"
+  },
+  "homepage": "https://github.com/RaphaelBecker/mern-shop#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  }
+}
