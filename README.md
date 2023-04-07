@@ -68,3 +68,9 @@ Go to root:
 
 1. install nodemon and concurrently as dev dependency: `npm i -D nodemon concurrently`
 2. add run scripts in `package.json`
+
+## Environment variable manager
+
+Go to root:
+
+1. Install dotenv (https://www.npmjs.com/package/dotenv): `npm i dotenv`
