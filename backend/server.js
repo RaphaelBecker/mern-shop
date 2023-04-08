@@ -1,11 +1,15 @@
 // its a file thats because .js
 import products from "./data/products.js";
+import connectDB from "./config/db.js";
+import colors from "colors";
 import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 
-var app = express();
 dotenv.config();
+connectDB();
+
+var app = express();
 
 app.use(cors());
 
@@ -25,4 +29,7 @@ app.get("/api/products/:id", (req, res) => {
 const PORT = process.env.PORT || 5000;
 const MODE = process.env.NODE_ENV || "<no mode configured>";
 
-app.listen(PORT, console.log(`Listening on ${MODE} mode to port ${PORT}`));
+app.listen(
+  PORT,
+  console.log(`Listening on '${MODE}' mode to port '${PORT}'`.yellow.bold)
+);

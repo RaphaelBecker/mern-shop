@@ -74,3 +74,46 @@ Go to root:
 Go to root:
 
 1. Install dotenv (https://www.npmjs.com/package/dotenv): `npm i dotenv`
+2. Create a `.env` file in root and note all variables
+
+## Introduce a MongoDB Database
+
+### What is a MongoDB database?
+
+A MongoDB database is a non relational database which is document based.
+
+- A document is a JSON Object, which can represent a Shop item for example.
+- The database assignes every document an individual id (`_id`).
+- Collections are the buckets for documents
+
+#### MongoDB Atlas (Online Cluster Service):
+
+1. Go to mongodb.com and create a Cluster and a database with a collection
+2. Set a user: user_name and password and set access from anywhere
+3. Connect the database with your application
+
+#### MongoDB Compass (DB Browser app):
+
+1. Download and install MongoDB Compoass from mongodb.com
+2. Connect the database from Atlas to Compass in MongoDB Atlas -> Now we can use the cloud DB via Compass
+
+#### Mongoose connects the database. A powerful object data mapper:
+
+Go to root:
+
+1. install mogoose for Node.js (https://mongoosejs.com/) : `npm i mongoose`
+2. Create a folder in the backend folder: `config`
+3. Create a `db.js` file
+
+### Colors in the console:
+
+Go to root:
+
+1. install colors for Node.js: `npm i colors`
+2. set the log strings to colors example: `'codexyz'.cyan.bolt`
+
+### Use encryption for user passwords:
+
+Go to root:
+
+1. Install bcryptjs: `npm i bcryptjs`
