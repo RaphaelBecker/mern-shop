@@ -117,3 +117,9 @@ Go to root:
 Go to root:
 
 1. Install bcryptjs: `npm i bcryptjs`
+
+### Using express-async-handler:
+
+Simple middleware for handling exceptions inside of async express routes and passing them to your express error handlers. Go to root:
+
+1. install express-async-handler (https://www.npmjs.com/package/express-async-handler): `npm i express-async-handler`
