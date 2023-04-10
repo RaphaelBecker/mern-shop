@@ -123,3 +123,9 @@ Go to root:
 Simple middleware for handling exceptions inside of async express routes and passing them to your express error handlers. Go to root:
 
 1. install express-async-handler (https://www.npmjs.com/package/express-async-handler): `npm i express-async-handler`
+
+## Introducing REDUX global state management
+
+Got to frontend!
+
+1. Install: `npm i redux react-redux redux-thunk redux-devtools-extension`
